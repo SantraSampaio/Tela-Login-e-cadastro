@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"roboto", sans-serif;
+}
+
+body{
+
+background-color:#e0e2e9;
+color: bisque;
+max-width: 100%;
+max-height: 100%;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 20px gray,
+     -10px 10px 20px gray; 
+    backdrop-filter: blur(30px);
+    width: 400px;
+    justify-content: center;
+    padding: 50px;
+    background-color: #000000;
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+h1{
+    padding-bottom: 20px;
+}
+/* usuário e senha */
+.dados{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+i{      display: flex;
+        padding-top: 37px;
+        padding-right: 10px;
+        font-size: 20px;
+}
+.user, .password{
+    display: flex;
+}
+
+input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    height: 30px;
+    width:330px;
+    padding: 8px 12px;
+    background-color: #e0e2e9;
+
+}
+::placeholder{
+    display: flex;
+    font-size: 15px;
+    text-align: start;
+}
+label{
+    display: flex;
+    font-size: 15px;
+    color: gray;
+    padding-bottom: 7px;
+}
+
+/* registro */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 390px;;
+
+}
+a{
+    color: gray;
+}
+
+button{
+    font-size: 18px;
+    padding: 15px 175px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e0e2e9;
+    color: rgb(17, 17, 17)
+
+}
+
+
+a:hover{
+color: bisque;
+transition: 0.8s;
+}
+
+button:hover{
+    background-color: bisque;
+    transition: 0.8s;
+
+}
+
+input:hover{
+    padding: 10px 12px;
+
+}
+
+
+/* responsividade */
+@media screen and (max-width:520px){
+    
+
+.login{
+    width: 200px;
+    font-size: 16px;
+}
+button{
+    padding: 5px 108px;
+    font-size:10px;
+}
+
+a{
+    font-size: 10px;
+}
+nav{
+
+    width: 250px;;
+
+}
+input{
+    width: 200px;
+    padding: 0px 5px;
+    justify-content: center;
+
+}
+
+input:hover{
+    padding: 0px 5px;
+
+
+}
+::placeholder{
+    font-size:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i{
+    padding-top: 25px;
+}
+label{
+    font-size: 11px;
+}
+}
