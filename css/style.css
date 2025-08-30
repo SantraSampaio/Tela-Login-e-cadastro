@@ -8,11 +8,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    padding: 50px 0px;
     background-color:#e0e2e9;
     color: bisque;
     max-width: 100%;
-    max-height: 100%;
+
 
 
 }
@@ -118,9 +118,15 @@ input:hover{
 @media screen and (max-width:520px){
     
 
+    body{
+        height: none;
+            padding: 50px 0px;
+    }
 .login{
     width: 200px;
     font-size: 16px;
+
+
 }
 button{
     padding: 8px 108px;
